@@ -3,6 +3,9 @@
 ### Fri, 09 Mar 2018 18:32:21
 First iteration
 
+### Fri, 09 Mar 2018 23:17:27
+Add styles and layouts
+
 ---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
