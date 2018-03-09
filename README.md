@@ -1,5 +1,10 @@
 # LifeLength
 
+### Fri, 09 Mar 2018 18:32:21
+First iteration
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development server

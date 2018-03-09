@@ -1,0 +1,20 @@
+<input
+  type="number"
+  [ngModel]="plainLifeLength"
+  (ngModelChange)="onPlainLifeLengthChange($event)">
+
+<select
+  [ngModel]="intervalSize"
+  (ngModelChange)="onIntervalSizeChange($event)">
+  <option *ngFor="let size of intervalSizes" value="{{size.key}}">{{size.value}}</option>
+</select>
+
+{{full}} - {{done}} - {{left}}
+
+<div class=intervals>
+  <app-interval
+    *ngFor="let iterate of iterateArray; let i = index; trackBy: trackByIntervals"
+    [filled]="iterate.filled"
+    [size]=iterate.size
+    [index]="i"></app-interval>
+</div>
