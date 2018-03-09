@@ -43,7 +43,7 @@
     .
   </p>
 
-  <p *ngIf="done > 0">
+  <p *ngIf="done > 0" [@bumpEnterAnimation]>
     You've already lived for {{done}} weeks. Left {{left}} weeks. Is it a lot?
   </p>
 

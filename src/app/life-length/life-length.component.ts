@@ -5,6 +5,7 @@ import {
   SizeOfInterval,
   Interval,
 } from './interval';
+import { bumpEnterAnimation } from './animations';
 
 const MSECS_IN_DAY = 60 * 60 * 24 * 1000;
 const MSECS_IN_YEAR = 60 * 60 * 24 * 365 * 1000;
@@ -20,6 +21,7 @@ milsecondsInInterval[SIZE_OF_INTERVAL.month] = milsecondsInInterval[SIZE_OF_INTE
   selector: 'app-life-length',
   templateUrl: './life-length.component.html',
   styleUrls: ['./life-length.component.scss'],
+  animations: [bumpEnterAnimation],
 })
 export class LifeLengthComponent implements OnInit {
   bornDay: number;
