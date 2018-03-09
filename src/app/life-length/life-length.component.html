@@ -1,15 +1,54 @@
-<input
-  type="number"
-  [ngModel]="plainLifeLength"
-  (ngModelChange)="onPlainLifeLengthChange($event)">
+<div class="sub-title">
+  <p>Imagine that the average life expectancy is
+    <input
+      class="life-length"
+      type="number"
+      [ngModel]="plainLifeLength"
+      (ngModelChange)="onPlainLifeLengthChange($event)" />
+  years.
+  <br/>
+  This is approximately {{full}}
+  <select
+    [ngModel]="intervalSize"
+    (ngModelChange)="onIntervalSizeChange($event)">
+    <option *ngFor="let size of intervalSizes" value="{{size.key}}">{{size.value}}</option>
+  </select>
+  </p>
 
-<select
-  [ngModel]="intervalSize"
-  (ngModelChange)="onIntervalSizeChange($event)">
-  <option *ngFor="let size of intervalSizes" value="{{size.key}}">{{size.value}}</option>
-</select>
+  <p>
+    You were born
+    <input
+      placeholder="30"
+      class="life-length"
+      type="number"
+      max="31"
+      min="1"
+      [(ngModel)]="bornDay"
+      (ngModelChange)="onBornChange()" />
 
-{{full}} - {{done}} - {{left}}
+    of
+    <select
+      [(ngModel)]="bornMonth"
+      (ngModelChange)="onBornChange()">
+      <option *ngFor="let month of months; let i = index" value="{{i}}">{{month}}</option>
+    </select>
+    ,
+    <input
+      placeholder="1990"
+      class="life-length year"
+      type="number"
+      min="1800"
+      [(ngModel)]="bornYear"
+      (ngModelChange)="onBornChange()" />
+    .
+  </p>
+
+  <p *ngIf="done > 0">
+    You've already lived for {{done}} weeks. Left {{left}} weeks. Is it a lot?
+  </p>
+
+</div>
+
 
 <div class=intervals>
   <app-interval

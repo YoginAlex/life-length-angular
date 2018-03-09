@@ -1,3 +1,11 @@
+:host {
+  box-sizing: border-box;
+  display: block;
+  max-width: 1024px;
+  padding: 35px;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
 }

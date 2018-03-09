@@ -19,9 +19,9 @@ export interface IInterface {
 }
 
 export const SizeOfInterval = {
-  [SIZE_OF_INTERVAL.day]: 'day',
-  [SIZE_OF_INTERVAL.week]: 'week',
-  [SIZE_OF_INTERVAL.month]: 'month',
+  [SIZE_OF_INTERVAL.day]: 'days',
+  [SIZE_OF_INTERVAL.week]: 'weeks',
+  [SIZE_OF_INTERVAL.month]: 'months',
 };
 
 export class Interval implements IInterface {

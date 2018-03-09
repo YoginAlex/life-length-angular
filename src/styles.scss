@@ -5,4 +5,8 @@
 * {
   font-family: $font-family;
   color: $mainText;
+
+  &:focus {
+    outline: none;
+  }
 }
