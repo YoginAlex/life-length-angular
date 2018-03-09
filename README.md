@@ -4,7 +4,10 @@
 First iteration
 
 ### Fri, 09 Mar 2018 23:17:27
-Add styles and layouts
+[add] styles and layouts
+
+### Fri, 09 Mar 2018 23:48:45
+[add] little animation
 
 ---
 
